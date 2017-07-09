@@ -18,7 +18,7 @@ title: Roman Dynnik
 email: rdinnik@gmail.com
 description:
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: "https://rdinnik.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: "http://rdynnik.ru" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
   #name:
   #twitter:
