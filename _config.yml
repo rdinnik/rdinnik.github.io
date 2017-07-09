@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: ru-RU
-title: Roman Dynnik's
+title: Roman Dynnik's professional blog
 email: rdinnik@gmail.com
-description: professional blog
+description:
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: "http://rdynnik.ru" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
