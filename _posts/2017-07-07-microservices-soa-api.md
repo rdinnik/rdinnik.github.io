@@ -3,8 +3,6 @@ title: "Микросервисы, SOA и API: Друзья или враги?"
 ---
 _Сравнение ключевых концепций архитектуры интеграции и приложений для эволюционирующего предприятия_
 
-![](/assets/images/microservices/article-logo.jpg)
-
 > Опубликовано 21 января 2016 года<br />
 > **Автор:** [Ким Кларк](https://uk.linkedin.com/in/kimjulianclark){:target="_blank"}<br />
 > **Перевод:** [Роман Дынник](https://www.linkedin.com/in/roman-dynnik-332b1b11){:target="_blank"}<br />
