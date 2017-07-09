@@ -1,5 +1,8 @@
 ---
 title: "Микросервисы, SOA и API: Друзья или враги?"
+image: 
+  path: &image /assets/images/microservices/article-logo.jpg
+  feature: *image
 ---
 _Сравнение ключевых концепций архитектуры интеграции и приложений для эволюционирующего предприятия_
 
