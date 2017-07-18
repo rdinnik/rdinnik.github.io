@@ -42,6 +42,10 @@ feed:
 paginate: 10
 paginate_path: /page:num/
 
+# discus
+disqus:
+  shortname: rdynnik
+
 # Exclude from processing.
 exclude:
   - .asset-cache
