@@ -72,7 +72,7 @@ _Информационная Архитектура_ обеспечивает �
 
 ## Русурсы
 
-- [TOGAF9. Section 9. Phase C: Information Systems Architectures](http://pubs.opengroup.org/architecture/togaf9-doc/arch/index.html){:target="_blank"}
+- [TOGAF9. Section 9. Phase C: Information Systems Architectures](http://pubs.opengroup.org/architecture/togaf9-doc/arch/chap09.html){:target="_blank"}
 - [Enterprise Architects. Data is NOT Information](http://enterprisearchitects.com/data-is-not-information){:target="_blank"}
 - [Rational System Architect. Creating data dissemination diagrams](https://www.ibm.com/support/knowledgecenter/en/SS6RBX_11.4.3/com.ibm.sa.togaf9.doc/topics/t_Data_Dissem_Diag.html){:target="_blank"}
 - [Togaf Modeling. Data dissemination diagrams](http://www.togaf-modeling.org/models/data-architecture-menu/data-dissemination-diagrams-menu.html)
