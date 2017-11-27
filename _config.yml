@@ -22,7 +22,7 @@ url: "http://rdynnik.ru" # the base hostname & protocol for your site e.g. "http
 author:
   #name:
   #twitter:
-  #picture:
+  picture: /assets/images/rd-photo.jpg
 #twitter_username:
 #github_username:
 logo: # path of site logo, e.g. "/assets/images/logo.png"
