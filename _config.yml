@@ -20,7 +20,7 @@ description:
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: "http://rdynnik.ru" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
-  #name:
+  name: Roman Dynnik
   #twitter:
   picture: /assets/images/rd-photo.jpg
 #twitter_username:
