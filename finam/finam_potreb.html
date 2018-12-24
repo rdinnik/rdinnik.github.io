@@ -1,0 +1,42 @@
+﻿<html>
+<head>
+	<script language="javascript">
+		var tickets = [
+			{ title: 'Магнит', id: 17086, cat: 7},
+			{ title: 'Лента др', id: 385792, cat: 7},
+			{ title: 'М.видео', id: 19737, cat: 7},
+			{ title: 'Нефть', id: 19473, cat: 7},
+			{ title: 'Золото', id: 18953, cat: 7},
+			{ title: 'ММВБ', id: 13851, cat: 7},
+			{ title: 'S&P500', id: 90, cat: 7},
+            { title: 'EUR\\USD', id: 83, cat: 7},
+            { title: 'USD\\RUB', id: 901, cat: 7},
+            { title: 'EUR\\RUB', id: 66860, cat: 7}
+		];
+		function buildImgTag(id, freq, cat){
+			var res = '<img width="460" height="400" src="http://node.finam.ru/imcf3.asp?id=' + id + '&type=3&ma=6&maval=7&freq=' + freq + '&uf=1&indval=&cat=' + cat + '&cai=7&cat=4&cai=7&v=&idxf=&curr=0&mar=1&gifta_mode=1" />';
+			return res;
+		}
+		function buildItem(item){
+			var res = "<h3>"+item.title+"</h3>";
+			     res+="<table>";
+			     res+="<td>"+buildImgTag(item.id, 5, item.cat)+"</td>";//day
+			     res+="<td>"+buildImgTag(item.id, 6, item.cat)+"</td>";//week
+		  	     res+="<td>"+buildImgTag(item.id, 7, item.cat)+"</td>";//month
+			     res+="</table>";
+			     res+="<br />"
+			     return res;
+		}
+		function  build(){
+			var res = "";
+			for(var i = 0; i < tickets.length; i++){
+				res+=buildItem(tickets[i]);	
+			}
+			document.write(res);
+		}
+
+	</script>
+</head>
+<body onload="build()">
+</body>
+</html>

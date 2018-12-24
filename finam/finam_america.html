@@ -1,0 +1,92 @@
+﻿<html>
+<head>
+	<script language="javascript">
+		var tickets = [
+
+			{ title: '3M co', id: 18090, cat: 7},
+			{ title: 'AT&T Inc', id: 19067, cat: 7},
+			{ title: 'Adobe Systems Inc.', id: 20563, cat: 7},
+			{ title: 'Alcoa Inc', id: 17997, cat: 7},
+			{ title: 'Alphabet Inc.', id: 20590, cat: 7},
+			{ title: 'American Express', id: 18009, cat: 7},
+			{ title: 'American Intl Group Inc', id: 19070, cat: 7},
+			{ title: 'American Tower Corp. Cl A', id: 20568, cat: 7},
+			{ title: 'Apple Inc.', id: 20569, cat: 7},
+			{ title: 'Applied Materials Inc.', id: 20570, cat: 7},
+			{ title: 'Bank of America', id: 18011, cat: 7},
+			{ title: 'Boeing Co', id: 18010, cat: 7},
+			{ title: 'CA Inc.', id: 20576, cat: 7},
+			{ title: 'Caterpillar Inc', id: 18026, cat: 7},
+			{ title: 'Chevron', id: 18037, cat: 7},
+			{ title: 'Cisco Systems Inc.', id: 20580, cat: 7},
+			{ title: 'Citigroup Inc', id: 18023, cat: 7},
+			{ title: 'Coca-Cola co', id: 18076, cat: 7},
+			{ title: 'Corning Inc.', id: 20582, cat: 7},
+			{ title: 'DuPont', id: 18039, cat: 7},
+			{ title: 'EMC Corp.', id: 20585, cat: 7},
+			{ title: 'Exxon Mobil', id: 18149, cat: 7},
+			{ title: 'First Solar Inc.', id: 20586, cat: 7},
+			{ title: 'GE', id: 18055, cat: 7},
+			{ title: 'Goldman Sachs Group Inc', id: 472568, cat: 7},
+			{ title: 'Hewlett-Packard', id: 18068, cat: 7},
+			{ title: 'Home Depot', id: 18063, cat: 7},
+			{ title: 'IBM', id: 18069, cat: 7},
+			{ title: 'Int.Paper', id: 22141, cat: 7},
+			{ title: 'Intel Corp', id: 19069, cat: 7},
+			{ title: 'JPMorgan Chase&Co', id: 18074, cat: 7},
+			{ title: 'Johnson & Johnson', id: 18073, cat: 7},
+			{ title: 'McDonalds', id: 18080, cat: 7},
+			{ title: 'Merck & Co', id: 18094, cat: 7},
+			{ title: 'Microsoft Corp', id: 19068, cat: 7},
+			{ title: 'Pfizer Inc', id: 18106, cat: 7},
+			{ title: 'Procter & Gamble', id: 18107, cat: 7},
+			{ title: 'Travelers Comp.', id: 22139, cat: 7},
+			{ title: 'United Technologies', id: 18134, cat: 7},
+			{ title: 'Verizon Communications', id: 18137, cat: 7},
+			{ title: 'Wal-Mart Stores', id: 18146, cat: 7},
+			{ title: 'Walt Disney', id: 18041, cat: 7},
+			{ title: 'Wells Fargo', id: 22138, cat: 7},
+			{ title: 'Yahoo INC', id: 19075, cat: 7},
+			{ title: 'Яндекс', id: 81151, cat: 7},
+			
+			{ title: 'Нефть', id: 19473, cat: 7},
+			{ title: 'Золото', id: 18953, cat: 7},
+			{ title: 'ММВБ', id: 13851, cat: 7},
+			{ title: 'РТС', id: 17455, cat: 7},
+			{ title: 'S&P500', id: 90, cat: 7},
+            { title: 'EUR\\USD', id: 83, cat: 7},
+            { title: 'USD\\RUB', id: 901, cat: 7},
+            { title: 'EUR\\RUB', id: 66860, cat: 7}
+                       
+
+		];
+		function buildImgTag(id, freq, cat){
+			var res = '<img width="460" height="400" src="http://node.finam.ru/imcf3.asp?id=' + id + '&type=3&ma=6&maval=7&freq=' + freq + '&uf=1&indval=&cat=' + cat + '&cai=7&cat=4&cai=7&v=&idxf=&curr=0&mar=1&gifta_mode=1" />';
+			return res;
+		}
+		function buildItem(item){
+			var res = "<h3>"+item.title+"</h3>";
+			     res+="<table>";
+			     res+="<td>"+buildImgTag(item.id, 5, item.cat)+"</td>";//day
+			     res+="<td>"+buildImgTag(item.id, 6, item.cat)+"</td>";//week
+		  	     res+="<td>"+buildImgTag(item.id, 7, item.cat)+"</td>";//month
+			     res+="</table>";
+			     res+="<br />"
+			     return res;
+		}
+		function  build(){
+			var res = "";
+			for(var i = 0; i < tickets.length; i++){
+				res+=buildItem(tickets[i]);	
+			}
+//var el = document.getElementById("graph");
+//el.insertAdjacentHTML('beforeend', res);
+			document.write(res);
+
+		}
+
+	</script>
+</head>
+<body onload="build()">
+</body>
+</html>

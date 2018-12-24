@@ -1,0 +1,50 @@
+﻿<html>
+<head>
+	<script language="javascript">
+		var tickets = [
+{ title: 'FXAU ETF', id: 181753, cat: 7},
+{ title: 'FXCN ETF', id: 385054, cat: 7},
+{ title: 'FXDE ETF', id: 181749, cat: 7},
+{ title: 'FXGD ETF', id: 181675, cat: 7},
+{ title: 'FXJP ETF', id: 181751, cat: 7},
+{ title: 'FXMM ETF', id: 388329, cat: 7},
+{ title: 'FXRB ETF', id: 175671, cat: 7},
+{ title: 'FXRL ETF', id: 453885, cat: 7},
+{ title: 'FXRU ETF', id: 182346, cat: 7},
+{ title: 'FXUK ETF', id: 181752, cat: 7},
+{ title: 'FXUS ETF', id: 181754, cat: 7},
+{ title: 'iFXIT ETF', id: 181750, cat: 7},
+
+			{ title: 'ММВБ', id: 13851, cat: 7},
+			{ title: 'S&P500', id: 90, cat: 7},
+            { title: 'USD\\RUB', id: 901, cat: 7},
+            { title: 'EUR\\RUB', id: 66860, cat: 7}
+		];
+
+		function buildImgTag(id, freq, cat){
+			var res = '<img width="460" height="400" src="http://node.finam.ru/imcf3.asp?id=' + id + '&type=3&ma=6&maval=7&freq=' + freq + '&uf=1&indval=&cat=' + cat + '&cai=7&cat=4&cai=7&v=&idxf=&curr=0&mar=1&gifta_mode=1" />';
+			return res;
+		}
+		function buildItem(item){
+			var res = "<h3>"+item.title+"</h3>";
+			     res+="<table>";
+			     res+="<td>"+buildImgTag(item.id, 5, item.cat)+"</td>";//day
+			     res+="<td>"+buildImgTag(item.id, 6, item.cat)+"</td>";//week
+		  	     res+="<td>"+buildImgTag(item.id, 7, item.cat)+"</td>";//month
+			     res+="</table>";
+			     res+="<br />"
+			     return res;
+		}
+		function  build(){
+			var res = "";
+			for(var i = 0; i < tickets.length; i++){
+				res+=buildItem(tickets[i]);	
+			}
+			document.write(res);
+		}
+
+	</script>
+</head>
+<body onload="build()">
+</body>
+</html>

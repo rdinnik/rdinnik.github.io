@@ -1,0 +1,42 @@
+﻿<html>
+<head>
+	<script language="javascript">
+		var tickets = [
+{ title: 'CNYRUB_TOD', id: 182402, cat: 7},
+{ title: 'CNYRUB_TOM', id: 182406, cat: 7},
+{ title: 'EURRUB курс ЦБ', id: 82486, cat: 7},
+{ title: 'EURRUB_TOD', id: 182441, cat: 7},
+{ title: 'EURRUB_TOM', id: 182398, cat: 7},
+{ title: 'USDEUR/RUB - КОРЗИНА', id: 182397, cat: 7},
+{ title: 'USDRUB курс ЦБ', id: 82485, cat: 7},
+{ title: 'USDRUB_TOD', id: 182456, cat: 7},
+{ title: 'USDRUB_TOM', id: 182400, cat: 7},
+{ title: 'Бивалютная корзина', id: 82840, cat: 7}
+		];
+		function buildImgTag(id, freq, cat){
+			var res = '<img width="460" height="400" src="http://node.finam.ru/imcf3.asp?id=' + id + '&type=3&ma=6&maval=7&freq=' + freq + '&uf=1&indval=&cat=' + cat + '&cai=7&cat=4&cai=7&v=&idxf=&curr=0&mar=1&gifta_mode=1" />';
+			return res;
+		}
+		function buildItem(item){
+			var res = "<h3>"+item.title+"</h3>";
+			     res+="<table>";
+			     res+="<td>"+buildImgTag(item.id, 5, item.cat)+"</td>";//day
+			     res+="<td>"+buildImgTag(item.id, 6, item.cat)+"</td>";//week
+		  	     res+="<td>"+buildImgTag(item.id, 7, item.cat)+"</td>";//month
+			     res+="</table>";
+			     res+="<br />"
+			     return res;
+		}
+		function  build(){
+			var res = "";
+			for(var i = 0; i < tickets.length; i++){
+				res+=buildItem(tickets[i]);	
+			}
+			document.write(res);
+		}
+
+	</script>
+</head>
+<body onload="build()">
+</body>
+</html>
