@@ -20,8 +20,7 @@ title: Технологии GraphQL
 - Graphene (Python)
 - Prisma (NodeJS)
 - graphql-yoga server (NodeJS)
-- MicroProfile GraphQL
-https://download.eclipse.org/microprofile/microprofile-graphql-1.0/microprofile-graphql.html?fbclid=IwAR12rX1bkUUXFdKYt9yv2vff62ozSubJlO4mkUIcTz4QRO2hnfWxglIrh0Q#types
+- [MicroProfile GraphQL](https://download.eclipse.org/microprofile/microprofile-graphql-1.0/microprofile-graphql.html?fbclid=IwAR12rX1bkUUXFdKYt9yv2vff62ozSubJlO4mkUIcTz4QRO2hnfWxglIrh0Q#types)
 
 ### Консоли
 - Altair
@@ -32,7 +31,8 @@ https://download.eclipse.org/microprofile/microprofile-graphql-1.0/microprofile-
 - Grafka: GraphQL interface for Apache Kafka
 
 ### Спецификации
-https://github.com/graphql/graphql-spec
+- [GraphQL specification](https://github.com/graphql/graphql-spec)
 
 ### Полезные ссылки
-https://github.com/hasura/awesome-react-graphql#graphql-baas-providers
+- [Curated collection of resources, clients and tools that make working with GraphQL and React/React Native awesome](https://github.com/hasura/awesome-react-graphql)
+- [Building an Event-Driven App with GraphQL and Knative](https://itsmurugappan.medium.com/building-an-event-driven-app-with-graphql-and-knative-3273760d5f52)
