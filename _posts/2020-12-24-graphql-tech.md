@@ -15,6 +15,7 @@ title: Технологии GraphQL
 ### Реализации и библиотеки для языков программирования
 - GraphQL Cool
 - GraphQL for .NET
+- [GraphQL Java](https://www.graphql-java.com/tutorials/getting-started-with-spring-boot/)
 - Sangria (Scala)
 - gqlgen (Go)
 - Graphene (Python)
