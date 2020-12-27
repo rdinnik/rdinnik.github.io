@@ -35,5 +35,6 @@ title: Технологии GraphQL
 - [GraphQL specification](https://github.com/graphql/graphql-spec)
 
 ### Полезные ссылки
+- [Принципы развития GraphQL в масштабе компании](https://www.graphql-java.com/tutorials/getting-started-with-spring-boot/)
 - [Curated collection of resources, clients and tools that make working with GraphQL and React/React Native awesome](https://github.com/hasura/awesome-react-graphql)
 - [Building an Event-Driven App with GraphQL and Knative](https://itsmurugappan.medium.com/building-an-event-driven-app-with-graphql-and-knative-3273760d5f52)
