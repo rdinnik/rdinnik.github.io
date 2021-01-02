@@ -23,6 +23,9 @@ title: Технологии GraphQL
 - graphql-yoga server (NodeJS)
 - [MicroProfile GraphQL](https://download.eclipse.org/microprofile/microprofile-graphql-1.0/microprofile-graphql.html?fbclid=IwAR12rX1bkUUXFdKYt9yv2vff62ozSubJlO4mkUIcTz4QRO2hnfWxglIrh0Q#types)
 
+### Базы данных
+- [yougaByteDB - PostgreSQL-compatible distributed data base](https://blog.yugabyte.com/graphql-distributed-sql-tips-and-tricks-july-10-2020/)
+
 ### Консоли
 - Altair
 - Firecamp
