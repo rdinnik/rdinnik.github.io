@@ -26,6 +26,7 @@ title: Технологии GraphQL
 
 ### Tools
 - [graphql-compose - генератор graphql схем из типов typescript](https://github.com/graphql-compose/graphql-compose)
+- [graphql-codegen-hasura](https://github.com/ablestack/graphql-codegen-hasura)
 
 ### Базы данных
 - [yougaByteDB - PostgreSQL-compatible distributed data base](https://blog.yugabyte.com/graphql-distributed-sql-tips-and-tricks-july-10-2020/)
