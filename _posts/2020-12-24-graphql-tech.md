@@ -23,6 +23,7 @@ title: Технологии GraphQL
 - graphql-yoga server (NodeJS)
 - [MicroProfile GraphQL](https://download.eclipse.org/microprofile/microprofile-graphql-1.0/microprofile-graphql.html?fbclid=IwAR12rX1bkUUXFdKYt9yv2vff62ozSubJlO4mkUIcTz4QRO2hnfWxglIrh0Q#types)
 - [Vaex: DataFrame как GraphQL](https://vaex.readthedocs.io/en/latest/example_graphql.html)
+- [Redis, NATS, Kafka и GraphQL subscriptions](https://www.opentechiz.com/blog-admin-1)
 
 ### Tools
 - [graphql-compose - генератор graphql схем из типов typescript](https://github.com/graphql-compose/graphql-compose)
