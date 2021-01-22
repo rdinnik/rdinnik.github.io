@@ -1,0 +1,17 @@
+---
+published: false
+title: Глоссарий Information Management & Data Governance
+---
+
+[frame=ends]
+|===
+|Термин |Определение |Источник
+
+|Operational Data Store
+|An operational data store (ODS) is an alternative to having operational decision support system (DSS) applications access data directly from the database that supports transaction processing (TP). While both require a significant amount of planning, the ODS tends to focus on the operational requirements of a particular business process (for example, customer service), and on the need to allow updates and propagate those updates back to the source operational system from which the data elements were obtained. The data warehouse, on the other hand, provides an architecture for decision makers to access data to perform strategic analysis, which often involves historical and cross-functional data and the need to support many applications.
+|link:https://www.gartner.com/en/information-technology/glossary/ods-operational-data-store[Gartner]
+
+|Cell in column 1, row 3
+|Cell in column 2, row 3
+|Cell in column 3, row 3
+|===
