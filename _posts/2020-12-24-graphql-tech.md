@@ -26,6 +26,7 @@ title: Технологии GraphQL
 - [Redis, NATS, Kafka и GraphQL subscriptions](https://www.opentechiz.com/blog-admin-1)
 - [GraphQL - SparQL](https://www.npmjs.com/package/graphql-to-sparql)
 - [GraphQL - Neo4J](https://github.com/neo4j-graphql/neo4j-graphql)
+- [Build Fullstack GraphQL Applications GraphQL + Appolo+ Neo4J + React](https://grandstack.io/)
 
 ### Tools
 - [graphql-compose - генератор graphql схем из типов typescript](https://github.com/graphql-compose/graphql-compose)
