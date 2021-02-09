@@ -33,6 +33,7 @@ title: Технологии GraphQL
 - [graphql-codegen-hasura](https://github.com/ablestack/graphql-codegen-hasura)
 - [graphql-editor](https://github.com/graphql-editor/graphql-editor)
 - [react admin data provider for Hasura](https://github.com/Steams/ra-data-hasura-graphql)
+- [graphql-code-generator - генератор кода по gql-схеме](https://graphql-code-generator.com/docs/custom-codegen/using-visitor)
 
 ### Базы данных
 - [yougaByteDB - PostgreSQL-compatible distributed data base](https://blog.yugabyte.com/graphql-distributed-sql-tips-and-tricks-july-10-2020/)
