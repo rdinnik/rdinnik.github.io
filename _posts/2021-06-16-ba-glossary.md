@@ -2,7 +2,7 @@
 published: false
 title: Глоссарий терминов в управлении архитектурой
 ---
-### Экономическое обоснования (Business Case)
+### Экономическое обоснование (Business Case)
 ### Бизнес-сценарий (Business Scenario)
 ### Цикл (Cycle)
 ### Жизненный цикл (Life Cycle)
