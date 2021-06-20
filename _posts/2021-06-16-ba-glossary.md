@@ -2,6 +2,8 @@
 published: false
 title: Глоссарий терминов в управлении архитектурой
 ---
+### Движущие силы (Business drivers)
+### Сдерживающие факторы (Challendges)
 ### Экономическое обоснование (Business Case)
 ### Бизнес-сценарий (Business Scenario)
 ### Цикл (Cycle)
