@@ -42,21 +42,32 @@
                        
 
 		];
-		function buildImgTag(id, freq, cat){
-			var res = '<img width="350" height="330" src="http://node.finam.ru/imcf3.asp?id=' + id + '&type=3&ma=6&maval=7&freq=' + freq + '&uf=1&indval=&cat=' + cat + '&cai=7&cat=4&cai=7&v=&idxf=&curr=0&mar=1&gifta_mode=1" />';
-			return res;
+
+		function buildImgTag(id, freq, cat, cellIndex){
+			var url = 'http://node.finam.ru/imcf3.asp?id=' + id + '&type=3&ma=6&maval=7&freq=' + freq + '&uf=1&indval=&cat=' + cat + '&cai=7&cat=4&cai=7&v=&idxf=&curr=0&mar=1&gifta_mode=1';
+			var img=new Image();
+			img.widht = 400;
+			img.height = 600;
+			img.src=url;
+			img.onerror= function(){
+				buildImgTag(id, freq, cat, cellIndex);
+			};
+			img.onload = function() {
+         					var container = document.getElementById(id);
+         					container.rows[0].childNodes[cellIndex].appendChild(this);
+    			};
 		}
 		function buildItem(item){
 			var res = "<h3>"+item.title+"</h3>";
-			     res+="<table>";
-			     res+="<td>"+buildImgTag(item.id, 1, item.cat)+"</td>";//1 min
-			     res+="<td>"+buildImgTag(item.id, 2, item.cat)+"</td>";//5 min
-			     res+="<td>"+buildImgTag(item.id, 3, item.cat)+"</td>";//15min
-			     res+="<td>"+buildImgTag(item.id, 4, item.cat)+"</td>";//hours
-		  	     res+="<td>"+buildImgTag(item.id, 5, item.cat)+"</td>";//day
-		  	     res+="<td>"+buildImgTag(item.id, 6, item.cat)+"</td>";//week
-			     res+="</table>";
-			     res+="<br />"
+			     res+="<table border='0' id='" + item.id + "'>" + "<tr>";
+			     	res+="<td>&nbsp;</td>";
+				res+="<td>&nbsp;</td>";
+				res+="<td>&nbsp;</td>";
+				res+="<td>&nbsp;</td>";
+				res+="<td>&nbsp;</td>";
+				res+="<td>&nbsp;</td>";
+			     res+="</tr></table>";
+			     res+="<br />";
 			     return res;
 		}
 		function  build(){
@@ -65,7 +76,17 @@
 				res+=buildItem(tickets[i]);	
 			}
 			document.write(res);
+			for(var i = 0; i < tickets.length; i++){
+				buildImgTag(tickets[i].id,1,tickets[i].cat, 0);// 1min
+				buildImgTag(tickets[i].id,2,tickets[i].cat, 1);// 5 min
+				buildImgTag(tickets[i].id,3,tickets[i].cat, 2);// 15 min
+				buildImgTag(tickets[i].id,4,tickets[i].cat, 3);// hours
+				buildImgTag(tickets[i].id,5,tickets[i].cat, 4);// day
+				buildImgTag(tickets[i].id,6,tickets[i].cat, 5);// week
+				buildImgTag(tickets[i].id,7,tickets[i].cat, 6);// month
+			}
 		}
+
 
 	</script>
 </head>

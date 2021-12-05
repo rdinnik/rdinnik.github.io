@@ -6,19 +6,18 @@
 			{ title: 'ММК', id: 16782, cat: 7},
 			{ title: 'ГМКНорНик', id: 795, cat: 7},
 			{ title: 'Мечел', id: 21018, cat: 7},
-
-            { title: 'Северсталь', id: 16136, cat: 7},
+            			{ title: 'Северсталь', id: 16136, cat: 7},
 			{ title: 'ОГК-2', id: 18684, cat: 7},
 			{ title: 'МРСК Холдинг', id: 20971, cat: 7},
 			{ title: 'Русгидро', id: 20266, cat: 7},
 			{ title: 'Газпром', id: 16842, cat: 7},
 			{ title: 'Новатек', id: 17370, cat: 7},
 			{ title: 'Роснефть', id: 17273, cat: 7},
-            { title: 'Татнефть', id: 825, cat: 7},
-            { title: 'Сургутнефтегаз', id: 4, cat: 7},
-            { title: 'Сургутнефтегаз-п', id: 13, cat: 7},
-	    { title: 'Лукойл', id: 8, cat: 7},
-            { title: 'Транснефть ап', id: 1012, cat: 7},
+		            { title: 'Татнефть', id: 825, cat: 7},
+		            { title: 'Сургутнефтегаз', id: 4, cat: 7},
+		            { title: 'Сургутнефтегаз-п', id: 13, cat: 7},
+			{ title: 'Лукойл', id: 8, cat: 7},
+		            { title: 'Транснефть ап', id: 1012, cat: 7},
                        
             { title: 'Сбербанк', id: 3, cat: 7},
             { title: 'ВТБ', id: 19043, cat: 7},
@@ -39,21 +38,30 @@
             { title: 'EUR\\USD', id: 83, cat: 7},
             { title: 'USD\\RUB', id: 901, cat: 7},
             { title: 'EUR\\RUB', id: 66860, cat: 7}
-                       
 
 		];
-		function buildImgTag(id, freq, cat){
-			var res = '<img width="460" height="400" src="http://node.finam.ru/imcf3.asp?id=' + id + '&type=3&ma=6&maval=7&freq=' + freq + '&uf=1&indval=&cat=' + cat + '&cai=7&cat=4&cai=7&v=&idxf=&curr=0&mar=1&gifta_mode=1" />';
-			return res;
+		function buildImgTag(id, freq, cat, cellIndex){
+			var url = 'http://node.finam.ru/imcf3.asp?id=' + id + '&type=3&ma=6&maval=7&freq=' + freq + '&uf=1&indval=&cat=' + cat + '&cai=7&cat=4&cai=7&v=&idxf=&curr=0&mar=1&gifta_mode=1';
+			var img=new Image();
+			img.widht = 400;
+			img.height = 600;
+			img.src=url;
+			img.onerror= function(){
+				buildImgTag(id, freq, cat, cellIndex);
+			};
+			img.onload = function() {
+         					var container = document.getElementById(id);
+         					container.rows[0].childNodes[cellIndex].appendChild(this);
+    			};
 		}
 		function buildItem(item){
 			var res = "<h3>"+item.title+"</h3>";
-			     res+="<table><tr>";
-			     res+="<td>"+buildImgTag(item.id, 5, item.cat)+"</td>";//day
-			     res+="<td>"+buildImgTag(item.id, 6, item.cat)+"</td>";//week
-		  	     res+="<td>"+buildImgTag(item.id, 7, item.cat)+"</td>";//month
+			     res+="<table border='0' id='" + item.id + "'>" + "<tr>";
+			     	res+="<td>&nbsp;</td>";
+				res+="<td>&nbsp;</td>";
+				res+="<td>&nbsp;</td>";
 			     res+="</tr></table>";
-			     res+="<br />"
+			     res+="<br />";
 			     return res;
 		}
 		function  build(){
@@ -61,10 +69,12 @@
 			for(var i = 0; i < tickets.length; i++){
 				res+=buildItem(tickets[i]);	
 			}
-//var el = document.getElementById("graph");
-//el.insertAdjacentHTML('beforeend', res);
 			document.write(res);
-
+			for(var i = 0; i < tickets.length; i++){
+				buildImgTag(tickets[i].id,5,tickets[i].cat, 0);//day
+				buildImgTag(tickets[i].id,6,tickets[i].cat, 1);//week
+				buildImgTag(tickets[i].id,7,tickets[i].cat, 2);//month
+			}
 		}
 
 	</script>
