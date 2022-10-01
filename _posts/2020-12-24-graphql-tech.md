@@ -11,7 +11,7 @@ title: Технологии GraphQL
 ### API на основе схемы БД
 - Hasura (GraphQL API from a PostgreSQL)
 - PostGraphile (GraphQL API from a PostgreSQL)
-
+- [HyperGraph](https://www.hypergraphql.org/tutorial/) (GraphQL API for Apache Jena)
 ### Реализации и библиотеки для языков программирования
 - GraphQL Cool
 - GraphQL for .NET
